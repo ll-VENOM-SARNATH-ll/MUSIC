@@ -7,15 +7,15 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH", "")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 #Get API_KEY from @DeadlineTechOwner or @DeadlineApiBot
 API_URL = getenv("API_URL", "https://deadlinetech.site")
-API_KEY = getenv("API_KEY")
+API_KEY = getenv("API_KEY", "AIzaSyAGaN1N6EnHKg83MQHt83_jp4kcp8GufQA")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -23,10 +23,10 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1001511253627"))
 
 # Get this value from @Harry_RoxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6848223695))
+OWNER_ID = int(getenv("OWNER_ID", "8160582005"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -43,8 +43,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ArcUpdates")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ArcChatz")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ll_ABOUT_VENOM_ll")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/NOBITA_SUPPORT")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
@@ -82,12 +82,12 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/pjwlqg.jpg"
+    "START_IMG_URL", "https://graph.org/file/c0f2d01ab430be86fe770-413c7cef7126870ea5.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/ou29gb.jpg"
+    "PING_IMG_URL", "https://graph.org/file/db1e522e88148b7765e8d-a4f542caf661a8c173.jpg"
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/tny9ug.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/6c0c3cc5724b5bccee529-32aae88017b04767ec.jpg"
 STATS_IMG_URL = "https://files.catbox.moe/k3e3bg.jpg"
 TELEGRAM_AUDIO_URL = "https://files.catbox.moe/nknnw1.jpg"
 TELEGRAM_VIDEO_URL = "https://files.catbox.moe/1xn73k.jpg"
