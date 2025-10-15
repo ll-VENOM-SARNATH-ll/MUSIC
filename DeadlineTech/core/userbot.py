@@ -75,8 +75,8 @@ class Userbot(Client):
         async def setup_assistant(client, number):
             try:
                 await client.start()
-                await client.join_chat("ArcBotz")
-                await client.join_chat("ArcUpdates")
+                await client.join_chat("ll_ABOUT_VENOM_ll")
+                await client.join_chat("NOBITA_SUPPORT")
             except Exception:
                 pass
 
